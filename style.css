@@ -1,0 +1,76 @@
+:root{
+    /* paleta de colores */
+    --color-uno: #e9e5c9;
+    --color-dos: #ffbd49;
+    --color-tres: #ff432e;
+
+    /* Font family */
+    --pc-ff-titulos: arial;
+    --pc-ff-texto: arial;
+    --pc-ff-precios: arial;
+
+    /* Font size */
+    --pc-fs-titulos: 40px;
+    --pc-fs-subtitulos: 20px;
+    --pc-fs-texto: 15px;
+    --pc-fs-precios: 20px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    background-color: var(--color-uno);
+}
+nav{
+    background-color: var(--color-dos);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+h1{
+    font-size: var(--pc-fs-titulos);
+    text-align: center;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    margin: 20px auto;
+    width: 400px;
+}
+.contenedor{
+    width: 250px;
+    height: 300px;
+    margin: 30px auto;
+    display: inline-block;
+    background-color: white;
+}
+.contenedor img{
+    width: 100%;
+    overflow: hidden;
+}
+.contenedor .detalles{
+    text-align: center;;
+}
+.detalles h2{
+    font-family: var(--pc-ff-titulos);
+    font-size: var(--pc-fs-subtitulos);
+}
+.detalles p{
+    font-family: var(--pc-ff-texto);
+    font-size: var(--pc-fs-texto);
+    margin: 20px 0;
+}
+.detalles .precio{
+    color: var(--color-tres);
+    font-family: var(--pc-ff-precio);
+    font-size: var(--pc-fs-precios);
+}
